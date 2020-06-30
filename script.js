@@ -24,10 +24,42 @@ function changeColor(event){
     let audio = new Audio(`./Assets/${event.target.innerHTML.toLowerCase()}.mp3`);
     //let audio = new Audio(`./Assets/red.mp3`);
     audio.play()                                                 // when the function run, Audio will play.
+
+
+    
+
 }
 
-//console.log(event);
+let count = document.getElementById('carrier');              // let's declare a variable called count equal to document.get ElementbyId.
+let counter = 0;                                             // declare another variable for the counter accumulator = 0.
 
+// create a function called displayCount to do the counting.
+function displayCount(){
+    counter ++;                                              // counter = ++ means adding 1 on each click.
+    console.log(counter);                                    // test.
+    
+    count.innerHTML = counter;                               // setting up count.innerHTML = to the variable counter.
+    //console.log(event);
+}
+count.addEventListener('click', displayCount);               // adding an event listener to do the click every time displayCouny run .
 
+let read = document.getElementById('holder');
+let letter = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+let lecture = [];
+console.log(letter);
+// Create function called readLet to read.
+function countLet(letter){
+    
+    for ( let i = 0; i < letter.length; i++){
+        //console.log(letter);
+        letter[i].addEventListener('click', countLet);
+        
+        read.innerHTML = lecture;
+        console.log(lecture);
+    }
 
+    lecture +1
 
+}
+
+countLet(letter);
