@@ -1,0 +1,136 @@
+body{
+    background-color: lightslategray;
+    background-image: url(https://images.unsplash.com/photo-1578199842802-34b11352e3ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1041&q=80);
+    display: flex;
+}
+
+
+
+.container{
+    background-color: lightcoral;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.container1{
+    background-color: blueviolet;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.items1{
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 10%;
+    width: 40%;
+    min-height: 40px;
+    margin: 4px;
+    justify-content: space-between;
+    align-self: center;
+    font-family: cursive;
+    font-size: medium;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.container1-items1{
+    background-color: yellow;
+    border: 3px solid black;
+    border-radius: 2%;
+    width: 80%;
+    min-height: 50px;
+    margin: 4px;
+    justify-content: space-around;
+    align-self: center;
+    font-size: x-large;
+    
+    
+}
+
+.items1:hover{
+    background-repeat: initial;
+    color: lightcoral;
+}    
+
+.container1-items1:hover{
+    background-color: lightgreen;
+    color: darkgreen;
+}    
+
+.color-green{
+    background-color: darkgreen;
+}
+
+.color-white{
+    background-color: white;
+}
+
+.color-yellow{
+    background-color: yellow;
+}
+
+.color-brown{
+    background-color: brown;
+}
+
+.color-silver{
+    background-color: silver;
+}
+
+.color-grey{
+    background-color: darkgray;
+}
+
+.color-orange{
+    background-color: orangered;
+}
+
+.color-blue{
+    background-color: blue;
+}
+
+.color-red{
+    background-color: red;
+}
+
+.color-purple{
+    background-color: purple;
+}
+
+.color-gold{
+    background-color: gold;
+}
+
+.color-black{
+    background-color: black;
+}
+
+.item-double{
+    background-color: darkmagenta;
+    border: 3px solid black;
+    border-radius: 15%;
+    width: 70%;
+    min-height: 90px;
+    margin: 4px;
+    justify-content: space-around;
+    align-self: center
+}
