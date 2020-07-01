@@ -1,5 +1,26 @@
 console.log('Game App');           // testing out the JS on website.
 
+let read = document.getElementById('holder');
+
+console.log(read);
+//console.log(letter);
+let i = 0;
+// Create function called readLet to read.
+function countLet(){
+    
+   let letter = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+    //console.log(letter);
+    //for ( let i = 0; i < letter.length; i++){
+        //console.log(letter[i]);
+        
+        read.innerHTML = letter[i+=1];
+
+        
+   // }
+    //console.log(lecture);
+}
+read.addEventListener('click', countLet);
+
 let allElement = document.querySelectorAll('.items1');   // declare variable allElement equal to document.querySelectorAll to enable all items.
 let popUp = document.querySelector('.div');              // devalre variable popUp to select the div class.
 
@@ -43,23 +64,5 @@ function displayCount(){
 }
 count.addEventListener('click', displayCount);               // adding an event listener to do the click every time displayCouny run .
 
-let read = document.getElementById('holder');
-let letter = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-let lecture = [];
-console.log(letter);
-// Create function called readLet to read.
-function countLet(letter){
-    
-    for ( let i = 0; i < letter.length; i++){
-        //console.log(letter);
-        letter[i].addEventListener('click', countLet);
-        
-        read.innerHTML = lecture;
-        console.log(lecture);
-    }
 
-    lecture +1
 
-}
-
-countLet(letter);
