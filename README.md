@@ -7,7 +7,6 @@
 * [✔] Create a basic HTML well structured.
 * [✔] create Assets.
 * [✔] Game features.
-*  [✔]  . Onclick Colors.
-*  []   . Onclick Numbers.
-*  []   . Onclick Alphabet Letters.
-*  [] 
+* [✔]  . Onclick Colors.
+* [✔]  . Onclick Numbers.
+* [✔]  . Onclick Alphabet Letters.
