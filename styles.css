@@ -125,7 +125,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-self: center;
-    font-size: 80px;
+    font-size: 100px;
     font-weight: bolder;
     text-align: center;
 }
