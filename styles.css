@@ -58,16 +58,6 @@ body{
     
 }
 
-.container1-items1{
-    background-color: purple;
-    border: 3px solid whitesmoke;
-    border-radius: 2%;
-    width: 80%;
-    min-height: 60px;
-    margin: 4px;
-    justify-content: space-around;
-}
-
 .items1:hover{
     background-repeat: initial;
     color: lightcoral;
