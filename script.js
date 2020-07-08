@@ -4,7 +4,7 @@ let read = document.getElementById('holder');
 
 console.log(read);
 //console.log(letter);
-let i = 0;
+let i = -1;
 // Create function called readLet to read.
 function countLet(){
     
@@ -30,19 +30,19 @@ addClicks(allElement);                                  // Invoking the function
 function addClicks(arr){
     //console.log(param);                               // we console.log to check our parameter(array).
     for(let i = 0; i < arr.length; i++){                // Using a for loop to run through the array (the box of colored boxes).
-        arr[i].addEventListener('click', changeColor);  // Setting a addEventListener allowing the click with the next function changeColor.
+        arr[i].addEventListener('click', changeSound);  // Setting a addEventListener allowing the click with the next function changeColor.
     }
 }
 
 // Creating the function changeColor with the actual event as parameter.
-function changeColor(event){
+function changeSound(event){
     console.log(event.target.innerHTML)                  // console.loging check.
     //document.body.style.color = `${event.target.innerHTML}`   // trying out the templates litterals.
     let colorText = event.target.innerHTML                      // Declaring another variable called colorText equal to the event.target.innerHTML.
     console.log(colorText.toLowerCase());                       // logging colorText.toLowerCase to test.
 
     // declaring variable audio equal to new Audio using the templates litterals with the Assets file and .mp3.
-    let audio = new Audio(`./Assets/${event.target.innerHTML.toLowerCase()}.mp3`);
+    let audio = new Audio(`./Assets/${colorText.toLowerCase()}.mp3`);
     //let audio = new Audio(`./Assets/red.mp3`);
     audio.play()                                                 // when the function run, Audio will play.
 
@@ -52,15 +52,19 @@ function changeColor(event){
 }
 
 let count = document.getElementById('carrier');              // let's declare a variable called count equal to document.get ElementbyId.
-let counter = 0;                                             // declare another variable for the counter accumulator = 0.
-
+                                                             // declare another variable for the counter accumulator = 0.
+let counter = 0;
 // create a function called displayCount to do the counting.
 function displayCount(){
+    //let count = document.getElementById('carrier');
+    console.log('hit');
     counter ++;                                              // counter = ++ means adding 1 on each click.
     console.log(counter);                                    // test.
     
     count.innerHTML = counter;                               // setting up count.innerHTML = to the variable counter.
     //console.log(event);
+
+    //changeSound(event)
 }
 count.addEventListener('click', displayCount);               // adding an event listener to do the click every time displayCouny run .
 
